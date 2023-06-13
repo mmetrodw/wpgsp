@@ -1,1 +1,8 @@
-
+.wpgsp-wrapper {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 100px;
+    background: #F4F4F9;
+    border-radius: 25px;
+}
