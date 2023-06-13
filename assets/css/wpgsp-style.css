@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
 .wpgsp-wrapper {
     position: relative;
     display: flex;
@@ -5,4 +7,74 @@
     height: 100px;
     background: #F4F4F9;
     border-radius: 25px;
+    overflow: hidden;
+}
+
+.wpgsp-wrapper,
+.wpgsp-wrapper * {
+    box-sizing: border-box;
+}
+
+.wpgsp-cover-wrapper {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    background: #000;
+    flex: 0 0 100px;
+}
+
+.wpgsp-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    display: flex;
+    flex-wrap: nowrap;
+    column-gap: 20px;
+    align-items: center;
+}
+
+.wpgsp-song-info {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    row-gap: 5px;
+}
+
+.wpgsp-title {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 14px;
+    color: #586F7C;
+}
+
+.wpgsp-artist {
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 12px;
+    color: #000;
+}
+
+.wpgsp-audio-seek {
+    position: relative;
+    min-width: 100px;
+    height: 100%;
+    background: #555;
+    flex: 1 1 auto;
+}
+
+.wpgsp-playback {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    background: #586F7C;
+}
+
+.wpgsp-playback:hover,
+.wpgsp-playback.active {
+    background: #B8DBD9;
 }
