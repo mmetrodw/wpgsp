@@ -13,6 +13,8 @@ function getRandomInt(min, max) {
   
 
 for(i = 0; i < count; i++){
-    let html_to_insert = '<div class="wpgsp-bar" style="height: ' + getRandomInt(0, 60) + 'px"></div>';
-    seek.insertAdjacentHTML('beforeend', html_to_insert);
+  let bar = document.createElement('div');
+  bar.className = 'wpgsp-bar';
+  bar.style.height = getRandomInt(0, 60) + 'px';
+  seek.append(bar);
 }
